@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto, Figtree } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
+
 
 // Configurando a fonte Roboto
 const roboto = Roboto({
@@ -19,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", figtree.variable)}>
       <body className={`${roboto.variable} antialiased`}>{children}</body>
     </html>
   );
