@@ -1,7 +1,12 @@
-export default function Home() {
+"use client";
+import { CardForm } from "@/components/card";
+import { Header } from "@/components/header";
+
+export default function Page() {
   return (
-    <div className="mx-auto max-w-[900px] p-4">
-      <h1 className="text-2xl font-bold">Buscar CEP</h1>
+    <div className="max-w-4xl mx-auto p-5">
+      <Header />
+      <CardForm />
     </div>
   );
 }

@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📮 API de Busca de CEP
 
-## Getting Started
+Uma API moderna e prática construída com **Next.js** e **TypeScript**, que permite buscar informações de um CEP diretamente na aplicação.
 
-First, run the development server:
+Com esta API, você pode:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Buscar CEPs digitando-os em um campo de entrada.
+- Exibir uma tela de **loading** enquanto a consulta é realizada.
+- Limpar os resultados da tela com um botão de **Limpar**.
+- Validar o CEP digitado usando **Zod**, garantindo que apenas formatos válidos sejam consultados.
+- Interface estilizada com **Tailwind CSS** e componentes de **ShadCN**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Buscar CEP:** Digite o CEP e clique em "Buscar" para consultar os dados.
+- **Loading:** Durante a consulta, uma animação ou mensagem de carregamento aparece.
+- **Limpar:** Limpa os resultados e o campo de CEP digitado.
+- **Validação:** O CEP digitado é validado com **Zod** antes da consulta.
+- **UI Moderna:** Layout limpo e responsivo usando Tailwind CSS e componentes ShadCN.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+<p align="center">
+  <img width="100%" style="max-width:100%" src="public/mockup-divaces.png">
+</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖥️ Demonstração
 
-## Deploy on Vercel
+1. Abra a página da aplicação.
+2. Digite um CEP válido (ex: `01001-000`).
+3. Clique em **Buscar**.
+4. Veja os dados do CEP aparecerem após o carregamento.
+5. Clique em **Limpar** para resetar a página.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org/) – framework React para aplicações web modernas
+- [TypeScript](https://www.typescriptlang.org/) – tipagem segura e robusta
+- [Zod](https://github.com/colinhacks/zod) – validação de dados
+- [Tailwind CSS](https://tailwindcss.com/) – estilização rápida e responsiva
+- [ShadCN](https://shadcn.com/) – biblioteca de componentes UI para React
+
+---
+
+## 💡 Como Usar
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/api-busca-cep.git
+   ```
+
+2. Bash
+
+   ```bash
+   npm install
+   ```
+
+3. Abra o navegador em http://localhost:3000.
+
+4. Digite um CEP e clique em Buscar para consultar dados.
+
+5. Use o botão Limpar para resetar a página.
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
