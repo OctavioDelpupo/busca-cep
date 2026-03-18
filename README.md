@@ -23,7 +23,7 @@ Com esta API, você pode:
 ---
 
 <p align="center">
-  <img width="100%" style="max-width:100%" src="public/mockup-divaces.png">
+  <img width="100%" style="max-width:100%" src="public/Mockup-Divaces.png">
 </p>
 
 ---
